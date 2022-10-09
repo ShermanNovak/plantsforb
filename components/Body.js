@@ -14,10 +14,11 @@ export default Body
 
 const styles = StyleSheet.create({
     body: {
-        padding: 20
+        margin: 20
       },
     pageheader: {
         fontSize: 30,
         fontWeight: 'bold',
+        marginBottom: 10
     },
 })

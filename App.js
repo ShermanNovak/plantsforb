@@ -47,10 +47,10 @@ function MyTabs() {
         }}
       ></Tab.Screen>
       <Tab.Screen 
-        name="Store" 
+        name="Marketplace" 
         component={Store} 
         options={{
-          tabBarLabel: 'Store',
+          tabBarLabel: 'Marketplace',
           tabBarIcon: ({ color, size }) => (
             <MaterialCommunityIcons name="cart" color={color} size={size} />
           )
