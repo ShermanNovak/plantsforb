@@ -56,7 +56,7 @@ const Wallet = () => {
             <Image source={require('../assets/desert-group-icon.png')}/>
           </View>
           <View style={styles.plantdesc}>
-            <Text>100 CRO donated</Text>
+          <Text style={[styles.plant, {fontWeight: 'bold'}]}>100 CRO donated</Text>
             <Text>Oct 09, 11:42</Text>
           </View>
         </View>
