@@ -8,8 +8,7 @@ const Wallet = () => {
       <View style={styles.account}>
         <Text style={styles.cronos}>My CRONOS Account</Text>
         <View style={styles.value}>
-        <Text style={styles.num}>12.789</Text>
-        <Text> CRO</Text>
+            <Text style={styles.num}>12.789 CRO</Text>
         </View>
       </View>
       <Text class={styles.seeds}>100 Seeds = 1 CRO</Text>
