@@ -1,9 +1,10 @@
-import { StyleSheet, Text, View, Image, TouchableWithoutFeedback } from 'react-native'
+import { StyleSheet, Text, View, Image, ScrollView } from 'react-native'
 import React from 'react'
 import Body from '../components/Body.js'
 
 const Wallet = () => {
   return (
+    <ScrollView>
     <Body title='My Wallet'>
       <View style={styles.account}>
         <Text style={styles.cronos}>My CRONOS Account</Text>
@@ -19,7 +20,7 @@ const Wallet = () => {
       </View>
       <View>
         <View>
-          <Text style={{fontSize: 30, fontWeight: 'bold'}}>Today's Growth</Text>
+          <Text style={{fontSize: 30, fontWeight: 'bold', marginVertical: 20}}>Today's Growth</Text>
         </View>
         <View>
           <View style={styles.plants}>
@@ -46,12 +47,12 @@ const Wallet = () => {
         </View>
       </View>
       <View>
-        <Text>October 8</Text>
+        <Text style={{fontSize: 20, fontWeight: 'bold', marginVertical: 20}}>October 8</Text>
       </View>
 
       <View>
         <View style={styles.plants}>
-          <View style={[styles.plant, {backgroundColor: '#A58772'}]}>
+          <View style={[styles.plant, {backgroundColor: '#cee8d7'}]}>
             <Image source={require('../assets/desert-group-icon.png')}/>
           </View>
           <View style={styles.plantdesc}>
@@ -62,6 +63,7 @@ const Wallet = () => {
       </View>
 
     </Body>
+    </ScrollView>
   )
 }
 
