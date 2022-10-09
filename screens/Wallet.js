@@ -28,7 +28,7 @@ const Wallet = () => {
               <Image source={require('../assets/tree-vector.png')}/>
             </View>
             <View style={styles.plantdesc}>
-              <Text style={[styles.plant, {fontWeight: 'bold',}]}>5 Seeds harvested</Text>
+              <Text style={[styles.plant, {fontWeight: 'bold'}]}>5 Seeds harvested</Text>
               <Text>Oct 09, 11:42</Text>
             </View>
           </View>
@@ -40,7 +40,7 @@ const Wallet = () => {
               <Image source={require('../assets/tree-vector.png')}/>
             </View>
             <View style={styles.plantdesc}>
-              <Text>11 Seeds harvested</Text>
+            <Text style={[styles.plant, {fontWeight: 'bold'}]}>11 Seeds harvested</Text>
               <Text>Oct 09, 09:14</Text>
             </View>
           </View>
