@@ -1,11 +1,13 @@
 import React from 'react'
-import { Animated, StyleSheet, Text, View, Image } from 'react-native'
+import { Animated, StyleSheet, Text, View, Image, TouchableHighlight, TouchableOpacity } from 'react-native'
 import Body from '../components/Body.js'
 
-const Home = () => {
+const Home = ({ navigation }) => {
   return (
     <Body title='My Garden'>
-      <Image style={styles.onecolumn} source={require('../assets/random-succulent.png')}/>
+      <TouchableHighlight onPress={() => navigation.navigate('Marketplace')}>
+        <Image style={styles.onecolumn} source={require('../assets/random-succulent.png')}/>
+      </TouchableHighlight>
       <View style={styles.twocolumns}>
         <View style={[styles.card, {backgroundColor: '#a58772'}]}>
           <Image source={require('../assets/seed-currency.png')}/>

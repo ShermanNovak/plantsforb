@@ -4,23 +4,33 @@ import Body from '../components/Body.js'
 
 const Garden = () => {
     const [Watered, setWatered] = useState('Water');
+    
+    const plantData = {
+        name: 'Rose',
+        daysLeft: 25,
+        attribute: 'Special',
+        region: 'Asia',
+        seeds: 3,
+        url: '../assets/rose-icon.png' 
+    }
+
   return (
     <Body>
         <View style={styles.titles}>
             <Text style={{fontSize: 30, fontWeight: 'bold'}}>Garden</Text>
-            <Text style={{fontSize: 18}}>Rose</Text>
-            <Text>25 Days Left</Text>
+            <Text style={{fontSize: 18}}>{plantData.name}</Text>
+            <Text>{plantData.daysLeft} Days Left</Text>
         </View>
         <Image style={styles.plant} source={require('../assets/rose-icon.png')} />
         <View style={styles.actions}>
             <View style={[styles.desc, {backgroundColor: '#fff48c'}]}>
-                <Text>Special</Text>
+                <Text>{plantData.attribute}</Text>
             </View>
             <View style={[styles.desc, {backgroundColor: '#d088dc'}]}>
-                <Text>Special</Text>
+                <Text>{plantData.region}</Text>
             </View>
             <View style={[styles.desc, {backgroundColor: '#a58772'}]}>
-                <Text>Min 3</Text>
+                <Text>Min {plantData.seeds}</Text>
                 <Image style={styles.seed} source={require('../assets/seed-currency.png')} />
             </View>
         </View>
