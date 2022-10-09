@@ -80,7 +80,7 @@ const styles = StyleSheet.create({
   },
   num: {
     fontSize: 24,
-    color: 'white'
+    color: '#EBEBEB'
   },
   seeds: {
     fontSize: 14,
@@ -89,7 +89,7 @@ const styles = StyleSheet.create({
   },
   cronos:{
     marginBottom:15,
-    color: 'white'
+    color: '#EBEBEB'
   },
   titles: {
     marginTop:10,
