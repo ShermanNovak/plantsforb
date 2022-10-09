@@ -52,7 +52,7 @@ function MyTabs() {
         options={{
           tabBarLabel: 'Store',
           tabBarIcon: ({ color, size }) => (
-            <MaterialCommunityIcons name="heart" color={color} size={size} />
+            <MaterialCommunityIcons name="cart" color={color} size={size} />
           )
         }}
       ></Tab.Screen>
